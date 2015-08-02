@@ -1,4 +1,4 @@
-﻿open System.IO
+open System.IO
 
 // Define the 2 types of Document
 // using a Discriminated Union.
@@ -26,7 +26,7 @@ let parseLine (line:string) =
     (label, message)
 
 let fileName = "SMSSpamCollection"
-let path = __SOURCE_DIRECTORY__ + @"..\..\Data\" + fileName
+let path = __SOURCE_DIRECTORY__ + @"../../Data/" + fileName
 
 let dataset =
     File.ReadAllLines path

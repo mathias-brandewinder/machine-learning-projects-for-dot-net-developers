@@ -1,4 +1,4 @@
-﻿(*
+(*
 Create illustration samples:
 what types of patterns can exist in data?
 what problems can arise?
@@ -10,8 +10,8 @@ let seed = 1234567890
 let rng = Random (seed)
 let dbl () = rng.NextDouble ()
 
-#r @"..\packages\FSharp.Charting.0.90.9\lib\net40\FSharp.Charting.dll"
-#load @"..\packages\FSharp.Charting.0.90.9\FSharp.Charting.fsx"
+#r @"../packages/FSharp.Charting/lib/net40/FSharp.Charting.dll"
+#load @"../packages/FSharp.Charting/FSharp.Charting.fsx"
 
 open FSharp.Charting
 
@@ -27,8 +27,8 @@ let discusGenerator center radius =
         let dist = - log (1. - dbl ()) * radius
         let x = dist * cos angle
         let y =  dist * sin angle
-        cx + x, cy + y      
-    generator      
+        cx + x, cy + y
+    generator
 
 let clustered = seq {
 

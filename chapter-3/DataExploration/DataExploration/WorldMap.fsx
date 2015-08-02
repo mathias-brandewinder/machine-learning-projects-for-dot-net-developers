@@ -1,6 +1,6 @@
-﻿#I @"..\packages\"
-#r @"FSharp.Data.2.2.3\lib\net40\FSharp.Data.dll"
-#r @"Deedle.1.2.1\lib\net40\Deedle.dll"
+#I @"../../../packages"
+#r @"FSharp.Data/lib/net40/FSharp.Data.dll"
+#r @"Deedle/lib/net40/Deedle.dll"
 
 open FSharp.Data
 open Deedle
@@ -22,10 +22,10 @@ let dataframe =
         "Surface", surface ]
 dataframe?Code <- dataframe.RowKeys
 
-#r @"R.NET.Community.1.6.4\lib\net40\RDotNet.dll"
-#r @"RProvider.1.1.12\lib\net40\RProvider.Runtime.dll"
-#r @"RProvider.1.1.12\lib\net40\RProvider.dll"
-#r @"Deedle.RPlugin.1.2.1\lib\net40\Deedle.RProvider.Plugin.dll"
+#r @"R.NET.Community/lib/net40/RDotNet.dll"
+#r @"RProvider/lib/net40/RProvider.Runtime.dll"
+#r @"RProvider/lib/net40/RProvider.dll"
+#r @"Deedle.RPlugin/lib/net40/Deedle.RProvider.Plugin.dll"
 
 (*
 In case the rworldmap package is not installed,

@@ -1,5 +1,5 @@
-﻿#I @"..\packages\"
-#r @"FSharp.Data.2.2.3\lib\net40\FSharp.Data.dll"
+#I @"../../../packages"
+#r @"FSharp.Data/lib/net40/FSharp.Data.dll"
 
 open FSharp.Data
 

@@ -1,4 +1,4 @@
-﻿(*
+(*
 Loading the dataset
 *)
 
@@ -41,8 +41,8 @@ headers
 
 // plotting average tag usage
 
-#r @"..\packages\FSharp.Charting.0.90.9\lib\net40\FSharp.Charting.dll"
-#load @"..\packages\FSharp.Charting.0.90.9\FSharp.Charting.fsx"
+#r @"../packages/FSharp.Charting/lib/net40/FSharp.Charting.dll"
+#load @"../packages/FSharp.Charting/FSharp.Charting.fsx"
 open FSharp.Charting
 
 let labels = ChartTypes.LabelStyle(Interval=0.25)

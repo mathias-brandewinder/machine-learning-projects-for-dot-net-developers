@@ -1,4 +1,4 @@
-﻿open System
+open System
 open System.IO
 
 // Define the 2 types of Document
@@ -29,7 +29,7 @@ let parseLine (line:string) =
 // Machine Learning Repository:
 // http://archive.ics.uci.edu/ml/datasets/SMS+Spam+Collection
 // Path to the dataset:
-let path = __SOURCE_DIRECTORY__ + @"..\..\Data\SMSSpamCollection"
+let path = __SOURCE_DIRECTORY__ + @"../../Data/SMSSpamCollection"
 
 // Read the file into an array of strings,
 // and parse each of them into a tuple

@@ -1,14 +1,14 @@
-﻿#I @"../packages"
-#r @"Accord.2.15.0\lib\net45\Accord.dll"
-#r @"Accord.MachineLearning.2.15.0\lib\net45\Accord.MachineLearning.dll"
-#r @"Accord.Math.2.15.0\lib\net45\Accord.Math.dll"
-#r @"Accord.Statistics.2.15.0\lib\net45\Accord.Statistics.dll"
+#I @"../../../packages"
+#r @"Accord/lib/net45/Accord.dll"
+#r @"Accord.MachineLearning/lib/net45/Accord.MachineLearning.dll"
+#r @"Accord.Math/lib/net45/Accord.Math.dll"
+#r @"Accord.Statistics/lib/net45/Accord.Statistics.dll"
 
 open Accord.Statistics.Models.Regression
 open Accord.Statistics.Models.Regression.Fitting
 
 let readLogistic fileName =
-    let path = __SOURCE_DIRECTORY__ + @"..\..\Data\" + fileName
+    let path = __SOURCE_DIRECTORY__ + @"../../Data/" + fileName
     path
     |> System.IO.File.ReadAllLines
     |> fun lines -> lines.[1..]

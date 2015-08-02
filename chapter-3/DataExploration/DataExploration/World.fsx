@@ -1,5 +1,5 @@
-﻿#I @"..\packages\"
-#r @"FSharp.Data.2.2.3\lib\net40\FSharp.Data.dll"
+#I @"../../../packages"
+#r @"FSharp.Data/lib/net40/FSharp.Data.dll"
 
 open FSharp.Data
 
@@ -9,9 +9,9 @@ let countries = wb.Countries
 let pop2000 = [ for c in countries -> c.Indicators.``Population, total``.[2000]]
 let pop2010 = [ for c in countries -> c.Indicators.``Population, total``.[2010]]
 
-#r @"R.NET.Community.1.6.4\lib\net40\RDotNet.dll"
-#r @"RProvider.1.1.12\lib\net40\RProvider.Runtime.dll"
-#r @"RProvider.1.1.12\lib\net40\RProvider.dll"
+#r @"R.NET.Community/lib/net40/RDotNet.dll"
+#r @"RProvider/lib/net40/RProvider.Runtime.dll"
+#r @"RProvider/lib/net40/RProvider.dll"
 
 open RProvider
 open RProvider.``base``
@@ -56,7 +56,7 @@ Using Deedle dataframe and
 feeding it into R with the R plugin
 *)
 
-#r @"Deedle.1.2.1\lib\net40\Deedle.dll"
+#r @"Deedle/lib/net40/Deedle.dll"
 open Deedle
 
 let series1 = series [ "Alpha", 1.; "Bravo", 2.; "Delta", 4. ]
@@ -70,7 +70,7 @@ toyFrame?Second |> Stats.mean
 toyFrame?New <- toyFrame?First + toyFrame?Second
 toyFrame |> Stats.mean
 
-#r @"Deedle.RPlugin.1.2.1\lib\net40\Deedle.RProvider.Plugin.dll"
+#r @"Deedle.RPlugin/lib/net40/Deedle.RProvider.Plugin.dll"
 open Deedle.RPlugin
 
 let population2000 = 

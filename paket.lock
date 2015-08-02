@@ -1,0 +1,62 @@
+FRAMEWORK: NET45
+NUGET
+  remote: https://www.nuget.org/api/v2
+  specs:
+    Accord (2.15.0) - framework: >= net45
+    Accord.MachineLearning (2.15.0) - framework: >= net45
+      AForge (>= 2.2.5)
+      Accord (>= 2.15.0)
+      Accord.Math (>= 2.15.0)
+      Accord.Statistics (>= 2.15.0)
+    Accord.Math (2.15.0) - framework: >= net45
+      AForge (>= 2.2.5)
+      AForge.Math (>= 2.2.5)
+      Accord (>= 2.15.0)
+    Accord.Neuro (2.15.0) - framework: >= net45
+      AForge (>= 2.2.5)
+      AForge.Math (>= 2.2.5)
+      AForge.Neuro (>= 2.2.5)
+      Accord (>= 2.15.0)
+      Accord.Math (>= 2.15.0)
+    Accord.Statistics (2.15.0) - framework: >= net45
+      AForge (>= 2.2.5)
+      AForge.Math (>= 2.2.5)
+      Accord (>= 2.15.0)
+      Accord.Math (>= 2.15.0)
+    AForge (2.2.5) - framework: >= net45
+    AForge.Genetic (2.2.5) - framework: >= net45
+      AForge (>= 2.2.5)
+      AForge.Math (>= 2.2.5)
+    AForge.Math (2.2.5) - framework: >= net45
+      AForge (>= 2.2.5)
+    AForge.Neuro (2.2.5) - framework: >= net45
+      AForge (>= 2.2.5)
+      AForge.Genetic (>= 2.2.5)
+      AForge.Math (>= 2.2.5)
+    Deedle (1.2.1) - framework: >= net40
+    Deedle.RPlugin (1.2.1) - framework: >= net40
+      Deedle (>= 1.2.1)
+      R.NET.Community (>= 1.6.4)
+      R.NET.Community.FSharp (>= 1.6.4)
+      RProvider (>= 1.1.12)
+    DynamicInterop (0.7.4) - framework: >= net40
+    FSharp.Charting (0.90.10)
+    FSharp.Core (3.1.2.1) - framework: >= net45
+    FSharp.Data (2.2.3)
+    MathNet.Numerics (3.7.0) - framework: net45
+    MathNet.Numerics.FSharp.Signed (3.6.0) - framework: >= net45
+      FSharp.Core (>= 3.1.2.1)
+      MathNet.Numerics.Signed (3.6.0)
+    MathNet.Numerics.MKL.Linux-x64 (1.8.0)
+      MathNet.Numerics (>= 2.4.0)
+    MathNet.Numerics.MKL.Win-x64 (1.7.0) - framework: >= net45
+      MathNet.Numerics (>= 2.4.0)
+    MathNet.Numerics.Signed (3.6.0) - framework: >= net45
+    R.NET.Community (1.6.4) - framework: >= net40
+      DynamicInterop (0.7.4)
+    R.NET.Community.FSharp (1.6.4) - framework: >= net40
+      R.NET.Community (>= 1.6.4)
+    RProvider (1.1.12) - framework: >= net40
+      DynamicInterop (0.7.4)
+      R.NET.Community (1.6.4)
+      R.NET.Community.FSharp (1.6.4)
