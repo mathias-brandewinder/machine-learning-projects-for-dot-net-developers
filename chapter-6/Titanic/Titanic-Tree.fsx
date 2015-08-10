@@ -1,4 +1,5 @@
-#r @"./packages/FSharp.Data/lib/net40/FSharp.Data.dll"
+#!/usr/bin/env MONO_OPTIONS=-O=-aot MONO_GC_DEBUG=nursery-canaries
+#r @"../../packages/FSharp.Data/lib/net40/FSharp.Data.dll"
 #load "Tree.fs"
 
 open System
