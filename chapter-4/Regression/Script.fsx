@@ -1,5 +1,5 @@
-﻿#I @"packages\"
-#r @"FSharp.Data.2.2.1\lib\net40\FSharp.Data.dll"
+#I @"../../packages"
+#r @"FSharp.Data/lib/net40/FSharp.Data.dll"
 
 open FSharp.Data
 
@@ -21,15 +21,16 @@ let baseline =
     data |> Seq.averageBy (fun x -> abs (float x.Cnt - avg))
 
 // Basic plots
-#load @"FSharp.Charting.0.90.10\FSharp.Charting.fsx"
+#load @"FSharp.Charting/FSharp.Charting.fsx"
 open FSharp.Charting
 
 let all = Chart.Line [ for obs in data -> obs.Cnt ]
 
 // combine 2 line charts
-let detail = Chart.Combine [
-    Chart.Line [ for obs in data -> obs.Casual ]
-    Chart.Line [ for obs in data -> obs.Registered ] ]
+let detail =
+  Chart.Combine
+    [ Chart.Line [ for obs in data -> obs.Casual ]
+      Chart.Line [ for obs in data -> obs.Registered ] ]
 
 // scatterplot of registered vs casual users
 let reg_vs_cas = 

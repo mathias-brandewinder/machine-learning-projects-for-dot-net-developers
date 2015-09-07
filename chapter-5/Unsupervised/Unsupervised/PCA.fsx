@@ -1,12 +1,12 @@
-﻿(*
+(*
 Principal Components Analysis
 *)
 
 open System
 open System.IO
 
-#r @"..\packages\FSharp.Charting.0.90.9\lib\net40\FSharp.Charting.dll"
-#load @"..\packages\FSharp.Charting.0.90.9\FSharp.Charting.fsx"
+#r @"../packages/FSharp.Charting/lib/net40/FSharp.Charting.dll"
+#load @"../packages/FSharp.Charting/FSharp.Charting.fsx"
 open FSharp.Charting
 
 (*
@@ -36,8 +36,8 @@ let headers,observations =
 Loading Math.NET and computing basic correlations
 *)
 
-#r @"..\packages\MathNet.Numerics.3.5.0\lib\net40\MathNet.Numerics.dll"
-#r @"..\packages\MathNet.Numerics.FSharp.3.5.0\lib\net40\MathNet.Numerics.FSharp.dll"
+#r @"../packages/MathNet.Numerics.Signed/lib/net40/MathNet.Numerics.dll"
+#r @"../packages/MathNet.Numerics.FSharp.Signed.3.6.0/lib/net40/MathNet.Numerics.FSharp.dll"
 
 open MathNet
 open MathNet.Numerics.LinearAlgebra

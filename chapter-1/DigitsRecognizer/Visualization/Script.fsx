@@ -1,4 +1,4 @@
-﻿open System.IO
+open System.IO
 open System.Windows.Forms
 open System.Drawing
 
@@ -39,7 +39,7 @@ let draw (text:string) (pixels:int[]) =
         
     form.Show()
 
-let trainingPath = __SOURCE_DIRECTORY__ + @"..\..\Data\trainingsample.csv"
+let trainingPath = __SOURCE_DIRECTORY__ + @"../../Data/trainingsample.csv"
 let data = reader trainingPath
 
 let zero = data |> Seq.find (fun x -> x.Label = 0) 

@@ -1,4 +1,4 @@
-﻿open System
+open System
 open System.IO
 
 type Observation = { Label:string; Pixels: int[] }
@@ -16,7 +16,7 @@ let reader path =
     data.[1..]
     |> Array.map toObservation
 
-let trainingPath = __SOURCE_DIRECTORY__ + @"..\..\Data\trainingsample.csv"
+let trainingPath = __SOURCE_DIRECTORY__ + @"../../Data/trainingsample.csv"
 let training = reader trainingPath
 
 let euclideanDistance (pixels1,pixels2) =
@@ -31,7 +31,7 @@ let train (trainingset:Observation[]) (dist:Distance) =
         |> fun x -> x.Label
     classify
 
-let validationPath = __SOURCE_DIRECTORY__ + @"..\..\Data\validationsample.csv"
+let validationPath = __SOURCE_DIRECTORY__ + @"../../Data/validationsample.csv"
 let validation = reader validationPath
 
 let evaluate validationSet classifier = 

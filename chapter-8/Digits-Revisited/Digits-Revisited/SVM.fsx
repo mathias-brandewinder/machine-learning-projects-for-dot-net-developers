@@ -1,18 +1,18 @@
-﻿#I @"../packages"
-#r @"Accord.2.15.0\lib\net45\Accord.dll"
-#r @"Accord.MachineLearning.2.15.0\lib\net45\Accord.MachineLearning.dll"
-#r @"Accord.Math.2.15.0\lib\net45\Accord.Math.dll"
-#r @"Accord.Statistics.2.15.0\lib\net45\Accord.Statistics.dll"
+#I @"../../../packages"
+#r @"Accord/lib/net45/Accord.dll"
+#r @"Accord.MachineLearning/lib/net45/Accord.MachineLearning.dll"
+#r @"Accord.Math/lib/net45/Accord.Math.dll"
+#r @"Accord.Statistics/lib/net45/Accord.Statistics.dll"
 
-let svmRead fileName = 
-    let path = __SOURCE_DIRECTORY__ + @"..\..\Data\" + fileName
+let svmRead fileName =
+    let path = __SOURCE_DIRECTORY__ + @"../../Data/" + fileName
     path
     |> System.IO.File.ReadAllLines
     |> fun lines -> lines.[1..]
     |> Array.map (fun line ->
         let parsed = line.Split ','
         parsed.[0] |> int, parsed.[1..] |> Array.map float)
-    
+
 let labels,images = svmRead "trainingsample.csv" |> Array.unzip
 
 open Accord.MachineLearning.VectorMachines

@@ -1,8 +1,8 @@
-﻿#I @"packages\"
-#r @"FSharp.Data.2.2.1\lib\net40\FSharp.Data.dll"
-#load @"FSharp.Charting.0.90.10\FSharp.Charting.fsx"
-#r @"MathNet.Numerics.Signed.3.6.0\lib\net40\MathNet.Numerics.dll"
-#r @"MathNet.Numerics.FSharp.Signed.3.6.0\lib\net40\MathNet.Numerics.FSharp.dll"
+#I @"../../../packages"
+#r @"FSharp.Data/lib/net40/FSharp.Data.dll"
+#load @"FSharp.Charting/FSharp.Charting.fsx"
+#r @"MathNet.Numerics.Signed/lib/net40/MathNet.Numerics.dll"
+#r @"MathNet.Numerics.FSharp.Signed/lib/net40/MathNet.Numerics.FSharp.dll"
 
 open FSharp.Charting
 open FSharp.Data
