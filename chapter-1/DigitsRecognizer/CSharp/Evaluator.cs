@@ -13,6 +13,7 @@ namespace CSharp
             BasicClassifier classifier)
         {
             return validationSet
+                .AsParallel()
                 .Select(obs => Score(obs, classifier))
                 .Average();
         }
